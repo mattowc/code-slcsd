@@ -1,4 +1,4 @@
-
+<?php if(current_user_can('manage_options') || bp_is_my_profile()): ?>
 	<div id="BP-Container">
 		<div id="BP-Content">
 
@@ -55,5 +55,5 @@
 
 		</div><!-- #content -->
 	</div><!-- #container -->
-
+<?php endif; ?>
 	<?php //locate_template( array( 'sidebar.php' ), true ) ?>
