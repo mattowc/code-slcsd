@@ -75,7 +75,7 @@ if ($theHeader['menu_width'] == 'full') {
 		echo '</div>';
 	} 
 	?>
-
+	<?php if(is_home() || is_front_page()): ?>
 	<section id="Showcase" class="clearfix <?php echo $sc_class; ?>">
 		<div class="inner-1">
 			<div class="inner-2">
@@ -85,5 +85,5 @@ if ($theHeader['menu_width'] == 'full') {
 			</div>
 		</div>
 	</section>
-
+	<?php endif; ?>
 </div>
