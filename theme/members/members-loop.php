@@ -7,6 +7,15 @@ include_once( FRAMEWORK_DIR .'utilities/media-functions.php');
 
 <?php do_action( 'bp_before_members_loop' ) ?>
 
+
+<?php 
+
+// A small fix that only allows admins to view the members page
+if(!current_user_can('manage_options')): 
+// Add redirect code here
+else:
+?>
+
 <?php if ( bp_has_members( bp_ajax_querystring( 'members' ) ) ) : ?>
 
 	<div class="bp-pagination">
@@ -80,5 +89,5 @@ include_once( FRAMEWORK_DIR .'utilities/media-functions.php');
 	</div>
 
 <?php endif; ?>
-
+<?php endif; // End Jon's if ?>
 <?php do_action( 'bp_after_members_loop' ) ?>
