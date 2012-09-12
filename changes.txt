@@ -1,0 +1,6 @@
+Used to track plugin and theme changes that will not be committed.  This is to keep our repository clean, and focused on stuff that we create or change.  Dates added.
+
+---- 09 / 12 / 2012 ----
+
+Added Contact Form 7 (Plugin)
+Turned off as many social features as possible, BuddyPress (Plugin)
