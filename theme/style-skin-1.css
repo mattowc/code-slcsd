@@ -2,3 +2,7 @@
 	Skin Name: Skin 1
 */
 div.error { color: red !important; }
+
+.orange-header { color: orange !important; }
+
+span.light-green { color: #b1c651; }
